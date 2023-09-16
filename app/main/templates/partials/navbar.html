@@ -1,0 +1,56 @@
+<nav id="navbar" hx-target="this" hx-swap="outerHTML" class="sidebar">
+    <style>
+        .sidebar {
+            background-color: black;
+            width: 50px; /* Width of the icon-only view */
+            transition: width 0.3s; /* Smooth transition */
+            color: white; /* Color of the text and icons */
+        }
+
+        .sidebar a {
+            color: inherit; /* Ensure links are also white */
+            text-decoration: none;
+        }
+
+        .sidebar:hover {
+            width: 250px; /* Width of the expanded view */
+        }
+
+        .sidebar-description {
+            display: none; /* Hidden by default */
+        }
+
+        .sidebar:hover .sidebar-description {
+            display: inline; /* Shown when sidebar is hovered */
+        }
+
+        .sidebar-item {
+            padding: 10px;
+        }
+
+        .sidebar-item.active {
+            background-color: #333; /* or any other style to indicate active */
+        }
+    </style>
+
+    <div class="sidebar-item">
+        <i class="fas fa-home"></i>
+        <span class="sidebar-description"><a href="/">Home</a></span>
+    </div>
+    <div class="sidebar-item">
+        <i class="fas fa-mobile-alt"></i>
+        <span class="sidebar-description"><a href="/apps">Apps</a></span>
+    </div>
+    <div class="sidebar-item">
+        <i class="fas fa-newspaper"></i>
+        <span class="sidebar-description"><a href="/news">News</a></span>
+    </div>
+    <div class="sidebar-item">
+        <i class="fas fa-book"></i>
+        <span class="sidebar-description"><a href="/learn">Learn</a></span>
+    </div>
+    <div class="sidebar-item">
+        <i class="fas fa-info-circle"></i>
+        <span class="sidebar-description"><a href="/about">About</a></span>
+    </div>
+</nav>

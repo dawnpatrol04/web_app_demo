@@ -1,0 +1,9 @@
+ 
+Page: **Apps** 
+ - Header Section: Introduce the Apps page and its purpose  
+ - Features List Section: Highlight top 3 apps 
+ - Apps section: Explore our collection of top raated apps.
+ 
+
+Sub-pages: App Detail
+ 

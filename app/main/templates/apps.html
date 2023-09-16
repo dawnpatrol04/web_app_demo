@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Header Section -->
+<section class="jumbotron text-center bg-light text-black">
+    <h1>Welcome to Our Apps Collection!</h1>
+    <p>Discover a world of amazing applications designed to enrich your digital experience.</p>
+</section>
+
+<!-- Features List Section -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Top Featured Apps</h2>
+    <div class="row">
+        {% for app in apps[:3] %}
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="{{ app['Image URL'] }}" class="card-img-top" alt="{{ app['App Name'] }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ app['App Name'] }}</h5>
+                    <p class="card-text">{{ app['Description'] }}</p>
+                    <a href="{{ app['Link'] }}" class="btn btn-primary">Explore App</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Apps Section -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Explore Our Top-Rated Apps</h2>
+    <div class="row">
+        {% for app in apps %}
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="{{ app['Image URL'] }}" class="card-img-top" alt="{{ app['App Name'] }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ app['App Name'] }}</h5>
+                    <p class="card-text">{{ app['Description'] }}</p>
+                    <a href="{{ app['Link'] }}" class="btn btn-primary btn-sm">Visit App</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+Please create a shell script to create files an directories and populate them with required code.
+
+
+Ok.  We have installed the basic requirements and .venv.  
+
+Next need to create the pages and routes
+
+
+
+#### App Layout
+#####  Header 
+ - logo to the left User icon to the right, when clicked it will drop down a menu with the following options
+   - Profile
+   - Settings
+   - Logout
+#####  Nav Bar
+  - this will be a horizontal bar that will have the following links
+    - Home
+    - Apps
+    - News
+    - Learn
+    - About
+#####  Footer
+  - this is the footer and will be minimalistic 
+
+
+## FastAPI + HTMX Web App File Structure
+
+```markdown
+/myapp
+|-- /app
+|   |-- /main
+|   |   |-- __init__.py
+|   |   |-- routes.py       # Defines routes and their handlers
+|   |   |-- models.py       # Data models (if using an ORM like SQLAlchemy)
+|   |   |-- services.py     # Business logic and data services
+|   |   |-- /templates
+|   |   |   |-- base.html   # Base layout with navbar, sidebar, and main content section
+|   |   |   |-- homepage.html   # Main content of the homepage
+|   |   |   |-- /components
+|   |   |   |   |-- card.html   # Reusable KPI card component
+|   |   |   |   |-- graph.html  # Reusable graph component
+|   |   |-- /static
+|   |   |   |-- /css        # Stylesheets
+|   |   |   |-- /js         # JavaScript files (if any)
+|   |   |   |-- /images     # Images and icons
+|   |-- /database           # Database configurations and migrations
+|   |-- /auth               # Authentication functions and configurations
+|   |-- /utils              # Helper functions and utility scripts
+|   |-- /middlewares        # Middlewares for request/response processing
+|-- /tests                  # Unit and integration tests
+|   |-- /unit               # Unit tests
+|   |-- /integration        # Integration tests
+|-- main.py                 # Main entry point for the FastAPI app
+|-- requirements.txt        # List of Python packages required
+|-- config.py               # Global configuration settings
+|-- alembic.ini             # Alembic (or another tool) config for database migrations
+|-- README.md               # Documentation for setting up, running, and using the app
+|-- .gitignore              # Specifies intentionally untracked files to ignore in Git
+|-- Dockerfile              # Instructions for Docker containerization (if you plan to use Docker)
+|-- docker-compose.yml      # Defines and runs multi-container Docker applications (if relevant)
+|-- .env                    # Environment variables, ensure it's gitignored for security
+```

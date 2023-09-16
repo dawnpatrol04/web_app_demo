@@ -1,0 +1,6 @@
+apps Name,Description,Image URL,Link
+App 1,This is a description for App 1.,https://www.google.com/imgres?imgurl=https%3A%2F%2Fmartech.org%2Fwp-content%2Fuploads%2F2014%2F08%2Fmobile-apps-collage-ss-19201.jpg&tbnid=geEF0SB_7vdLuM&vet=12ahUKEwiq9czp86-BAxX2kIkEHQ5jBxIQMygSegUIARCaAQ..i&imgrefurl=https%3A%2F%2Fmartech.org%2Fsurvey-proclaims-consumer-preference-ad-supported-apps-daa-readies-mobile-appchoices%2F&docid=OvaUoCRadNL_3M&w=1920&h=1080&q=app%20image&ved=2ahUKEwiq9czp86-BAxX2kIkEHQ5jBxIQMygSegUIARCaAQ,http://link-to-app1.com
+App 2,This is a description for App 2.,/static/images/apps.png,http://link-to-app2.com
+App 3,This is a description for App 3.,/static/images/app3.jpg,http://link-to-app3.com
+App 4,This is a description for App 4.,/static/images/app4.jpg,http://link-to-app4.com
+App 5,This is a description for App 5.,/static/images/app5.jpg,http://link-to-app5.com
